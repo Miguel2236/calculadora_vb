@@ -44,6 +44,7 @@
     End Sub
 
     Private Sub btnLimpiar_Click(sender As Object, e As EventArgs) Handles btnLimpiar.Click
+        'limpiar la pantalla y memoria
         txtPantalla.Text = ""
         memoria1 = 0.0
         memoria2 = 0.0
@@ -143,6 +144,7 @@
     End Sub
 
     Private Sub btnBorrar_Click(sender As Object, e As EventArgs) Handles btnBorrar.Click
+        'borrar un caracter de la pantalla
         Try
             Dim largo As Integer
             If txtPantalla.Text <> "" Then
@@ -156,7 +158,6 @@
 
     Private Sub btnMasMenos_Click(sender As Object, e As EventArgs) Handles btnMasMenos.Click
         Try
-            Dim largo As Integer
             If txtPantalla.Text <> "" Then
                 txtPantalla.Text = txtPantalla.Text * (-1)
             End If
@@ -167,7 +168,6 @@
 
     Private Sub btnInversa_Click(sender As Object, e As EventArgs) Handles btnInversa.Click
         Try
-            Dim largo As Integer
             If txtPantalla.Text <> "" Then
                 txtPantalla.Text = 1 / txtPantalla.Text
             End If
@@ -189,5 +189,40 @@
         Next
         Return respuesta
     End Function
+
+    Private Sub btnIgual_Click(sender As Object, e As EventArgs) Handles btnIgual.Click
+        Try
+            If txtPantalla.Text <> "" And memoria1 <> 0.0 Then
+                memoria2 = txtPantalla.Text
+                calculadora()
+            End If
+        Catch ex As Exception
+            txtPantalla.Text = "Error"
+        End Try
+
+    End Sub
+
+    Private Sub calculadora()
+        'operaciones basicas funcionales
+        'se agrupan en case
+
+        Select Case signo
+            Case "+"
+                txtPantalla.Text = memoria1 + memoria2
+            Case "-"
+                txtPantalla.Text = memoria1 - memoria2
+            Case "*"
+                txtPantalla.Text = memoria1 * memoria2
+            Case "/"
+                txtPantalla.Text = memoria1 / memoria2
+            Case "raiz"
+                txtPantalla.Text = memoria1 ^ (1 / memoria2)
+            Case "exp"
+                txtPantalla.Text = memoria1 ^ memoria2
+            Case "%"
+                txtPantalla.Text = memoria1 * memoria2 / 100
+        End Select
+
+    End Sub
 
 End Class
