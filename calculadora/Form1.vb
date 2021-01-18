@@ -52,7 +52,7 @@
 
     Private Sub btnPunto_Click(sender As Object, e As EventArgs) Handles btnPunto.Click
         If txtPantalla.Text = "" Then
-            txtPantalla.Text = txtPantalla.Text = "0."
+            txtPantalla.Text = "0."
         ElseIf validar_punto(txtPantalla.Text) = False Then
             txtPantalla.Text = txtPantalla.Text & "."
         End If
@@ -182,11 +182,10 @@
 
         largo = cadena.Length
 
-        For i Ad Integer = 1 To largo Step 1
+        For i As Integer = 1 To largo Step 1
             If Mid(cadena, i, 1) = "." Then
                 respuesta = True
             End If
-
         Next
         Return respuesta
     End Function
