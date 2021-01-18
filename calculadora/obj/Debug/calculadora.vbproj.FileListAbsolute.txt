@@ -1,0 +1,11 @@
+c:\users\ti\documents\visual studio 2017\Projects\calculadora\calculadora\bin\Debug\calculadora.exe.config
+c:\users\ti\documents\visual studio 2017\Projects\calculadora\calculadora\bin\Debug\calculadora.exe
+c:\users\ti\documents\visual studio 2017\Projects\calculadora\calculadora\bin\Debug\calculadora.pdb
+c:\users\ti\documents\visual studio 2017\Projects\calculadora\calculadora\bin\Debug\calculadora.xml
+c:\users\ti\documents\visual studio 2017\Projects\calculadora\calculadora\obj\Debug\calculadora.vbprojResolveAssemblyReference.cache
+c:\users\ti\documents\visual studio 2017\Projects\calculadora\calculadora\obj\Debug\calculadora.Form1.resources
+c:\users\ti\documents\visual studio 2017\Projects\calculadora\calculadora\obj\Debug\calculadora.Resources.resources
+c:\users\ti\documents\visual studio 2017\Projects\calculadora\calculadora\obj\Debug\calculadora.vbproj.GenerateResource.Cache
+c:\users\ti\documents\visual studio 2017\Projects\calculadora\calculadora\obj\Debug\calculadora.exe
+c:\users\ti\documents\visual studio 2017\Projects\calculadora\calculadora\obj\Debug\calculadora.xml
+c:\users\ti\documents\visual studio 2017\Projects\calculadora\calculadora\obj\Debug\calculadora.pdb
